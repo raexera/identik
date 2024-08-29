@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecentralID</title>
+    <link rel="stylesheet" href="../css/network.css">
+    <script src="../js/network.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">DecentralID</div>
+        <input type="text" placeholder="Search for profiles" class="search-bar">
+        <div class="user-menu">
+            <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <img src="banner-image.jpg" alt="Banner" class="banner-image">
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>DecentralID User</h2>
+                <p>367 connections</p>
+            </div>
+            <div class="profile-actions">
+                <button class="btn connect">Connect</button>
+                <button class="btn chat">Chat</button>
+            </div>
+        </section>
+
+        <nav class="profile-nav">
+            <ul>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Clips</a></li>
+                <li><a href="#">Network</a></li>
+            </ul>
+        </nav>
+
+        <section class="connections">
+            <div class="connection-tabs">
+                <button class="tab active">All</button>
+                <button class="tab">New connections</button>
+                <button class="tab">Following</button>
+            </div>
+
+            <div class="connections-list">
+                <div class="connection-item">
+                    <img src="tony-spark.jpg" alt="Tony Spark" class="connection-avatar">
+                    <div class="connection-details">
+                        <h3>Tony Spark</h3>
+                        <p>13 mutual connections</p>
+                    </div>
+                    <button class="more-options">...</button>
+                </div>
+                <!-- Repeat similar blocks for other connections -->
+            </div>
+        </section>
+
+        <footer class="account-details">
+            <p>Your Account Details</p>
+            <p>ID Account: 537f226vdvbueue5</p>
+            <img src="barcode.png" alt="Barcode" class="barcode">
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

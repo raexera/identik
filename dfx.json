@@ -1,18 +1,8 @@
 {
   "canisters": {
-    "identik_backend": {
-      "main": "src/identik_backend/main.mo",
+    "test_backend": {
+      "main": "contract/Identik.mo",
       "type": "motoko"
-    },
-    "identik_frontend": {
-      "dependencies": [
-        "identik_backend"
-      ],
-      "source": [
-        "src/identik_frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "identik_frontend"
     }
   },
   "defaults": {

@@ -1,59 +1,36 @@
-# `identik`
+# WEB 3 IDENTIK
 
-Welcome to your new `identik` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+![alt_text](https://github.com/user-attachments/assets/b71016e7-15e7-4dda-b644-9e083c0f20c6)
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Simple Flow
+![alt_text](https://github.com/user-attachments/assets/782257c6-870e-453d-82eb-611329df32a8)
 
-To learn more before you start working with `identik`, see the following documentation available online:
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Motoko Programming Language Guide](https://internetcomputer.org/docs/current/motoko/main/motoko)
-- [Motoko Language Quick Reference](https://internetcomputer.org/docs/current/motoko/main/language-manual)
+## Project Description:
 
-If you want to start working on your project right away, you might want to try the following commands:
+Identik is a decentralized identity platform designed to securely manage and store user data while generating ID addresses for seamless data integration. The primary goal of Identik is to offer a secure and decentralized solution for identity management, allowing users to easily integrate their personal information with various companies by providing a unique ID address. This platform is built using Motoko Backend and Vanilla JS Frontend and emphasizes security and privacy in handling user data.
 
-```bash
-cd identik/
-dfx help
-dfx canister --help
-```
+## Key Features:
 
-## Running the project locally
+User Management: Identik enables the creation of ID addresses and user profiles, which include detailed personal information such as full name, national identification number (NIK), place and date of birth, gender, religion, marital status, occupation, nationality, and profile picture. Users can also update their information, retrieve user details by NIK, and verify their identity through verifiable credentials, such as scanning their national ID card (KTP).
+ID Address Generation: The platform generates a unique ID address for each identity, such as a KTP or passport, which is valid for 30 days. This ID address facilitates secure integration with target companies.
+API Support: Identik provides APIs for generating ID addresses, user login and registration, and validation through multi-factor authentication (MFA), which includes biometric verification and passkey security.
 
-If you want to test your project locally, you can use the following commands:
+Identik aims to revolutionize identity management by offering a decentralized, secure, and user-friendly solution for individuals.
 
-```bash
-# Starts the replica, running in the background
-dfx start --background
+## Problem Statement
 
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
-```
+The increasing need for secure and efficient identity management in Indonesia has exposed the limitations of traditional centralized systems, which are often vulnerable to data breaches and misuse. Users face difficulties in managing and securely sharing their personal information with multiple entities. Identik addresses this challenge by offering a decentralized identity platform that allows users to generate unique ID addresses for seamless and secure data transactions. This approach reduces the risks associated with centralized data storage and provides users with greater control over their personal information.
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
+## Project Goal
 
-If you have made changes to your backend canister, you can generate a new candid interface with
+The goal of the Identik project is to provide a secure, decentralized platform for identity management, enabling users in Indonesia to easily and safely manage and share their personal data with various companies using a unique ID address embedded in a QR code. This solution aims to simplify data transactions while ensuring privacy and security.
 
-```bash
-npm run generate
-```
+## Benefits
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
-
-If you are making frontend changes, you can start a development server with
-
-```bash
-npm start
-```
-
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
-
-### Note on frontend environment variables
-
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
-
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
+- Enhanced Security and Privacy: By utilizing a decentralized platform, Identik significantly reduces the risk of data breaches and unauthorized access, ensuring that users' personal information remains secure and private.
+- Simplified Data Transactions: Users can easily share their personal data with various companies through a unique ID address embedded in a QR code, streamlining the process of data exchange and reducing the complexity of identity verification.
+- User Empowerment: Identik empowers users by giving them full control over their personal data, allowing them to manage, update, and share their information as needed without relying on centralized systems.
+- Seamless Integration: The platform provides a user-friendly interface and API support, enabling seamless integration with different companies and services, making it easier for users to connect their identities across multiple platforms.
+- Compliance with Regulatory Standards: Identik's focus on security, privacy, and data protection ensures compliance with national and international regulatory standards, providing peace of mind for both users and businesses.
+- Scalability and Flexibility: As a decentralized solution, Identik can easily scale to accommodate a growing number of users and adapt to new technologies and regulations, ensuring long-term viability and relevance.

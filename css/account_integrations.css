@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.integration-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <h1>DigiID</h1>
+        <nav>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h1>Sign up</h1>
+            <p>Join DigiID to get started</p>
+            <form id="signupForm">
+                <label for="fullname">Your full name</label>
+                <input type="text" id="fullname" placeholder="Name Surname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Choose a username" required>
+
+                <label for="password">Set your password</label>
+                <input type="password" id="password" placeholder="********" required>
+
+                <label for="confirmPassword">Confirm your password</label>
+                <input type="password" id="confirmPassword" placeholder="********" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">By signing up, you agree to our Terms and Privacy Policy.</label>
+                </div>
+
+                <button type="submit">Join now</button>
+            </form>
+            <p>Already a member? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 DigiID. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
